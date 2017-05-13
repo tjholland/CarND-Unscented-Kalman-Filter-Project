@@ -74,6 +74,21 @@ public:
   ///* the current NIS for laser
   double NIS_laser_;
 
+  ///* Previous timestamp
+  long previous_timestamp_;
+
+  ///* Augmented state vector
+  VectorXd x_aug_;
+
+  ///* Augmented state covariance matrix
+  VectorXd P_aug_;
+
+  Tools tools;
+
+  float rho_in;
+  float phi_in;
+  float rhodot_in;
+
   /**
    * Constructor
    */
